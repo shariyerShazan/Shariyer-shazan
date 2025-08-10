@@ -23,10 +23,10 @@ function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside)
     }
   }, [showMenu])
-  
+
 
   return (
-    <nav className="relative">
+    <nav className="relative z-[9999]">
       {/* Desktop Sidebar */}
       <div className="hidden lg:flex flex-col items-center fixed right-0 top-1/2 -translate-y-1/2 gap-4 p-4 bg-container rounded-l-xl shadow-lg">
         {links.map((data, index) => (

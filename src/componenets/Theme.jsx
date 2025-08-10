@@ -91,7 +91,7 @@ export default function ThemeSelector() {
         onMouseDown={onMouseDown}
         onClick={() => setShowThemes((prev) => !prev)}
         style={{ top: pos.y, left: pos.x }}
-        className="fixed z-50 p-3 bg-primary rounded-full shadow-lg text-white cursor-move select-none"
+        className="fixed z-50 p-3 bg-black rounded-full shadow-lg text-white cursor-move select-none"
         aria-label="Toggle theme selector"
       >
         <FiSettings size={24} />
