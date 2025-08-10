@@ -1,9 +1,10 @@
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+// import { FaArrowRight } from 'react-icons/fa'
 import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { HiOutlineMail } from 'react-icons/hi'
 import MySkills from '../componenets/MySkills';
 import GitHubStats from '../componenets/GitHubStats';
+import { FiDownload } from "react-icons/fi";
 
 function AboutPage() {
   const birthYear = 2003;
@@ -100,7 +101,7 @@ const age = currentYear - birthYear;
                   <button className="my-4  cursor-pointer group relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white">
                    <span className="ml-8"> Download CV</span>
                     <span className=" absolute -left-[4px]  flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
-                      <FaArrowRight />
+                      <FiDownload />
                     </span>
                   
                     {/* Background fill effect */}

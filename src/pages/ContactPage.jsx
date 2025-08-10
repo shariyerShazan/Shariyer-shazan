@@ -1,5 +1,16 @@
 import React, { useState } from "react";
-import { FaEnvelope, FaPhone, FaFacebookF, FaTwitter, FaYoutube, FaDribbble, FaPaperPlane } from "react-icons/fa";
+import emailjs from "emailjs-com";
+import { toast, ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaDribbble,
+} from "react-icons/fa";
+import { FiSend } from "react-icons/fi";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -10,59 +21,110 @@ export default function ContactPage() {
   });
 
   const handleChange = (e) => {
-    setForm({...form, [e.target.name]: e.target.value});
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent! (Implement your backend or email service)");
+  
+    const formWithTime = {
+      ...form,
+      time: new Date().toLocaleString(), 
+    };
+  
+    emailjs
+      .send(
+        import.meta.env.EMAIL_SERVICE_ID,
+        import.meta.env.EMAIL_TEMPLATE_ID,
+        formWithTime,
+        import.meta.env.EMAIL_USER_ID
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully!");
+          setForm({ name: "", email: "", subject: "", message: "" });
+        },
+        (error) => {
+          toast.error("Failed to send message, please try again.");
+          console.error(error);
+        }
+      );
   };
-
+  
   return (
-    <section className="min-h-screen px-6 py-16 mx-auto flex flex-col md:flex-row gap-16 bg-white text-gray-900">
-      
-      {/* Left info */}
-      <div className="md:w-1/2 flex flex-col justify-center gap-8">
-        <h2 className="text-4xl font-extrabold">
-          Get In <span className="text-blue-600">Touch</span>
+    <section className="min-h-screen px-8 py-20 max-w-7xl mx-auto flex flex-col md:flex-row gap-20 bg-white relative overflow-hidden text-gray-900">
+      {/* Toast Container */}
+      <ToastContainer position="top-right" autoClose={3000} />
+
+      {/* Background large text */}
+      <h1 className="absolute top-12 left-8 text-center text-[8rem] font-extrabold text-primary opacity-10 select-none pointer-events-none hidden md:block">
+        CONTACT
+      </h1>
+
+      {/* Left Info */}
+      <div className="md:w-1/2 flex flex-col justify-center gap-10 z-10">
+        <h2 className="text-5xl font-extrabold tracking-tight text-primary">
+          Get In <span className="text-primary">Touch</span>
         </h2>
-        <p className="font-semibold text-lg">Don't be Shy !</p>
-        <p className="max-w-md">
-          Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+        <p className="font-semibold text-xl text-gray-700">Don't be shy!</p>
+        <p className="max-w-md text-gray-600 leading-relaxed">
+          Feel free to reach out for new projects, creative ideas, or
+          opportunities to collaborate.
         </p>
 
-        <div className="flex flex-col gap-4 max-w-md">
-          <div className="flex items-center gap-4">
-            <FaEnvelope className="text-blue-600 text-xl" />
+        <div className="flex flex-col gap-6 max-w-md text-gray-700">
+          <div className="flex items-center gap-5">
+            <FaEnvelope size={30} className="text-primary text-2xl" />
             <div>
-              <p className="font-semibold">Mail me</p>
-              <a href="mailto:steve@mail.com" className="hover:text-blue-600 transition">steve@mail.com</a>
+              <p className="font-semibold text-gray-900">Mail me</p>
+              <a
+                href="mailto:steve@mail.com"
+                className="hover:text-primary transition duration-300"
+              >
+                shariyershazan1@gmail.com
+              </a>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <FaPhone className="text-blue-600 text-xl" />
+          <div className="flex items-center gap-5">
+            <FaPhone  size={30}  className="text-primary text-2xl" />
             <div>
-              <p className="font-semibold">Call me</p>
-              <a href="tel:+21621184010" className="hover:text-blue-600 transition">+216 21 184 010</a>
+              <p className="font-semibold text-gray-900">Call me</p>
+              <a
+                href="tel:+21621184010"
+                className="hover:text-primary transition duration-300"
+              >
+                +8801724-630245
+              </a>
             </div>
           </div>
         </div>
 
         {/* Social Icons */}
-        <div className="flex gap-6 mt-6">
-          <a href="#" className="bg-gray-200 hover:bg-blue-600 p-3 rounded-full transition text-gray-700 hover:text-white"><FaFacebookF /></a>
-          <a href="#" className="bg-gray-200 hover:bg-blue-600 p-3 rounded-full transition text-gray-700 hover:text-white"><FaTwitter /></a>
-          <a href="#" className="bg-gray-200 hover:bg-blue-600 p-3 rounded-full transition text-gray-700 hover:text-white"><FaYoutube /></a>
-          <a href="#" className="bg-gray-200 hover:bg-blue-600 p-3 rounded-full transition text-gray-700 hover:text-white"><FaDribbble /></a>
-        </div>
+        <div className="flex flex-wrap gap-4 mt-6">
+  <a className=" cursor-pointer" href="mailto:shariyershazan1@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a className=" cursor-pointer" href="https://www.linkedin.com/in/shariyerShazan" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a className=" cursor-pointer" href="https://www.facebook.com/darling.shazan" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>
+  <a className=" cursor-pointer" href="https://x.com/SJan_1293" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)" />
+  </a>
+</div>
+
       </div>
 
-      {/* Right form */}
+      {/* Right Form */}
       <form
         onSubmit={handleSubmit}
-        className="md:w-1/2 flex flex-col gap-6"
+        className="md:w-1/2 flex flex-col gap-8 z-10"
+        noValidate
       >
-        <div className="flex gap-4">
+        {/* Grid with 3 columns inputs */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <input
             type="text"
             name="name"
@@ -70,7 +132,7 @@ export default function ContactPage() {
             onChange={handleChange}
             placeholder="Your Name"
             required
-            className="bg-gray-100 rounded-md px-4 py-3 w-1/3 placeholder-gray-500 focus:outline-blue-600 focus:ring-1 focus:ring-blue-600 text-gray-900"
+            className="bg-gray-100 rounded-lg px-5 py-4 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition"
           />
           <input
             type="email"
@@ -79,7 +141,7 @@ export default function ContactPage() {
             onChange={handleChange}
             placeholder="Your Email"
             required
-            className="bg-gray-100 rounded-md px-4 py-3 w-1/3 placeholder-gray-500 focus:outline-blue-600 focus:ring-1 focus:ring-blue-600 text-gray-900"
+            className="bg-gray-100 rounded-lg px-5 py-4 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition"
           />
           <input
             type="text"
@@ -88,9 +150,10 @@ export default function ContactPage() {
             onChange={handleChange}
             placeholder="Your Subject"
             required
-            className="bg-gray-100 rounded-md px-4 py-3 w-1/3 placeholder-gray-500 focus:outline-blue-600 focus:ring-1 focus:ring-blue-600 text-gray-900"
+            className="bg-gray-100 rounded-lg px-5 py-4 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition"
           />
         </div>
+
         <textarea
           name="message"
           value={form.message}
@@ -98,14 +161,20 @@ export default function ContactPage() {
           placeholder="Your Message"
           rows={6}
           required
-          className="bg-gray-100 rounded-md px-4 py-3 placeholder-gray-500 focus:outline-blue-600 focus:ring-1 focus:ring-blue-600 resize-none text-gray-900"
+          className="bg-gray-100 rounded-lg px-5 py-4 placeholder-gray-400 text-gray-900 resize-none focus:outline-none focus:ring-2 focus:ring-primary transition"
         />
 
         <button
           type="submit"
-          className="flex items-center gap-3 self-start bg-blue-600 px-6 py-3 rounded-full text-white hover:bg-blue-700 transition"
+          className="my-4 cursor-pointer group relative flex items-center px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white"
         >
-          Send Message <FaPaperPlane />
+          <span className="ml-8">Send message</span>
+          <span className="absolute -left-[4px] flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
+            <FiSend />
+          </span>
+
+          {/* Background fill effect */}
+          <span className="absolute top-0 left-0 w-0 h-full bg-primary transition-all duration-500 ease-in-out group-hover:w-full -z-10 rounded-full"></span>
         </button>
       </form>
     </section>
