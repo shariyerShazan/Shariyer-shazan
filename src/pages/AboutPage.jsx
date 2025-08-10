@@ -3,6 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { HiOutlineMail } from 'react-icons/hi'
 import MySkills from '../componenets/MySkills';
+import GitHubStats from '../componenets/GitHubStats';
 
 function AboutPage() {
   const birthYear = 2003;
@@ -12,33 +13,12 @@ const age = currentYear - birthYear;
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
     
-      <h2 className="text-2xl md:text-5xl font-bold text-center py-8 border-b-2 border-gray-400">
+      <h2 className="text-2xl md:text-5xl font-bold text-center py-4 ">
         About <span className="text-primary">Shariyer Shazan</span>
       </h2>
-
-{/* skills */}
-       <MySkills />
  
- {/* social links */}
-      {/* <div className="flex justify-center  flex-wrap gap-4 my-8">
-  <a href="mailto:shariyershazan1@gmail.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://www.linkedin.com/in/shariyerShazan" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://www.facebook.com/darling.shazan" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
-  </a>
-  <a href="https://instagram.com/shariyer.shazan" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
-  <a href="https://x.com/SJan_1293" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)" />
-  </a>
-</div> */}
-
-      <div className="flex justify-center items-center gap-8  my-6">
+{/* social links */}
+      <div className="flex justify-center items-center gap-8 pb-6  my-6 border-b-2 border-gray-400">
             <a
               href="mailto:your-email@example.com"
               className="text-primary hover:text-primary-dark text-2xl"
@@ -159,6 +139,11 @@ const age = currentYear - birthYear;
           </div>
         </div>
       </div>
+
+      {/* skills */}
+      <MySkills />
+
+      <GitHubStats />
       
     </div>
   )
