@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { themes } from '../data';
 import { setActiveTheme } from '../redux/themeSlice';
 
 export default function ThemeSelector() {
-  const activeTheme = useSelector((state) => state.theme.activeTheme) || themes[0];
+   
+
+  const {activeTheme} = useSelector((state) => state.theme) ;
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (activeTheme?.color) {
+      document.documentElement.style.setProperty("--color-primary", activeTheme.color);
+    }
+  }, [activeTheme]);
 
   return (
     <div className="p-6">
@@ -15,12 +23,15 @@ export default function ThemeSelector() {
           <button
             key={theme.id}
             onClick={() => dispatch(setActiveTheme(theme))}
-            style={{ backgroundColor: theme.color }}
+            // style={{ backgroundColor: theme.color }}
             className={`w-12 h-12 rounded-full shadow-lg border-4 transition-transform duration-300 ${
-              activeTheme.id === theme.id ? 'scale-110 border-white' : 'border-transparent'
+              activeTheme.id === theme.id ? `scale-110 border-[${activeTheme.color}] border-[1px]` : 'border-transparent'
             }`}
             aria-label={`Select theme ${theme.id}`}
-          />
+            
+          >
+            <img src={theme.img} alt="" />
+          </button>
         ))}
       </div>
 
