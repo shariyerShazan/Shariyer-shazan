@@ -4,6 +4,10 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { HiOutlineMail } from 'react-icons/hi'
 
 function AboutPage() {
+  const birthYear = 2003;
+const currentYear = new Date().getFullYear();
+const age = currentYear - birthYear;
+
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
     
@@ -60,7 +64,7 @@ function AboutPage() {
           {/* Age */}
           <div>
             <p className="font-semibold text-lg">Age:</p>
-            <p>22</p>
+            <p>{age}</p>
           </div>
           {/* Nationality */}
           <div>
