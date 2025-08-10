@@ -104,14 +104,14 @@ export default function ThemeSelector() {
           className="fixed top-24 left-4 z-40 p-6 bg-container rounded-lg shadow-lg max-w-xs w-full"
         >
           <h2 className="mb-4 text-xl font-semibold">Choose a Theme</h2>
-          <div className="flex gap-4 flex-wrap">
+          <div className="grid grid-cols-5 gap-2">
             {themes.map((theme) => (
               <button
                 key={theme.id}
                 onClick={() => dispatch(setActiveTheme(theme))}
-                className={`w-12 h-12 rounded-full shadow-lg border-4 transition-transform duration-300 cursor-pointer ${
+                className={`w-12 h-12 hover:scale-110 rounded-full shadow-lg border-4 transition-transform duration-300 cursor-pointer ${
                   activeTheme?.id === theme.id
-                    ? `scale-110 border-primary border-[1px]`
+                    ? ` border-primary border-[1px]`
                     : 'border-transparent'
                 }`}
                 style={activeTheme?.id === theme.id ? { borderColor: activeTheme.color } : {}}

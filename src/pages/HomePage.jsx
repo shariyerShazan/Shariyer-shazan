@@ -78,7 +78,7 @@ function HomePage() {
           </div>
 
           <Link to={"/about"} className="flex  justify-center items-center">
-          <button className="my-4  cursor-pointer group relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white">
+          <button className="my-6  cursor-pointer group relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white">
  <span className="ml-8"> More About Me</span>
   <span className=" absolute -left-[4px]  flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
     <FaArrowRight />
