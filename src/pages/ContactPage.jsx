@@ -142,7 +142,7 @@ export default function ContactPage() {
           >
             <span className="ml-8">Send message</span>
             <span className="absolute -left-[4px] flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
-              <FiSend />
+              <FiSend size={20}/>
             </span>
             <span className="absolute top-0 left-0 w-0 h-full bg-primary transition-all duration-500 ease-in-out group-hover:w-full -z-10 rounded-full"></span>
           </button>
