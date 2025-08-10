@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+
+/* custom css */
+@theme {
+  --color-first: #852DDB;
+  --color-title: #666666;
+  --color-text: #808080;
+  --color-body: #FFFFFF;
+  --color-container: #EDEDED;
+  --color-border: #DEDEDE;
+}
