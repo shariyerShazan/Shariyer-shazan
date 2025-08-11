@@ -1,8 +1,40 @@
-import { configureStore } from '@reduxjs/toolkit';
-import themeReducer from "./themeSlice"
 
-export const Store = configureStore({
-  reducer: {
-    theme: themeReducer,
-  },
-});
+import themeSlice from "./themeSlice"
+import { combineReducers ,configureStore} from "@reduxjs/toolkit"
+
+
+import {
+    persistReducer,
+    FLUSH,
+    REHYDRATE,
+    PAUSE,
+    PERSIST,
+    PURGE,
+    REGISTER,
+  } from 'redux-persist'
+  import storage from 'redux-persist/lib/storage'
+
+
+  const persistConfig = {
+    key: 'root',
+    version: 1,
+    storage,
+  }
+
+const rootReducer = combineReducers({
+  theme : themeSlice ,
+
+  })
+  const persistedReducer = persistReducer(persistConfig, rootReducer)
+  
+  const store = configureStore({
+    reducer: persistedReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: {
+          ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        },
+      }),
+  })
+
+export default store

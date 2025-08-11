@@ -23,7 +23,7 @@ export default function MySkills() {
           <img
             src="https://skillicons.dev/icons?i=html,css,js,ts,react,redux,nextjs,tailwind,materialui"
             alt="Frontend skills"
-            className="max-h-14"
+            className="max-h-14 object-cover"
           />
         </div>
         <div className="flex justify-center flex-wrap gap-6">
