@@ -1,23 +1,25 @@
 import React from 'react'
 import ProjectCard from '../componenets/ProjectsCard';
+import flatflow from "../assets/flatflow.png"
+import noHunger from "../assets/noHunger.png"
 
 function PortfolioPage() {
       const projects = [
     {
-      img: "https://via.placeholder.com/300x200.png?text=Project+One",
-      name: "Project One",
-      description: "This is a demo description of project one. It showcases React and Tailwind skills.",
-      liveLink: "https://project-one-live.netlify.app",
-      clientSide: "https://github.com/username/project-one-client",
-      serverSide: "https://github.com/username/project-one-server",
+      img: flatflow,
+      name: "FlatFlow - Building management web application",
+      description: "FlatFlow is a building management web application that simplifies apartment operations. It includes tenant management, rent tracking, rent payment, create coupon and apply coupon system, maintenance requests, maintenance members, notice posting, and digital record keeping. The system supports a secure payment system and offers role-based access for users, members, and admins—ensuring smooth, organized, and transparent management for all.",
+      liveLink: "https://flatflow.netlify.app/",
+      clientSide: "https://github.com/shariyerShazan/FlatFlow-client",
+      serverSide: "https://github.com/shariyerShazan/FlatFlow-server",
     },
     {
-      img: "https://via.placeholder.com/300x200.png?text=Project+Two",
-      name: "Project Two",
-      description: "Project two is an e-commerce site with payment integration and user authentication.",
-      liveLink: "https://project-two-live.netlify.app",
-      clientSide: "https://github.com/username/project-two-client",
-      serverSide: "https://github.com/username/project-two-server",
+      img: noHunger,
+      name: "NoHunger - Food donate web application",
+      description: "NoHunger is a food donation web application that connects donors with those in need. Users can easily donate excess food, while others can collect and distribute it efficiently. The system includes role-based access for users, and donor, along with a secure tracking and coordination system to ensure food reaches the right hands on time.",
+      liveLink: "https://nohunger-ccf5b.web.app/",
+      clientSide: "https://github.com/shariyerShazan/NoHunger",
+      serverSide: "https://github.com/shariyerShazan/NoHunger-server",
     },
     {
       img: "https://via.placeholder.com/300x200.png?text=Project+Three",

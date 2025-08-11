@@ -47,9 +47,9 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="min-h-screen px-8 py-20 max-w-7xl mx-auto flex flex-col md:flex-row gap-20 bg-white relative overflow-hidden text-gray-900">
+    <section className="min-h-screen px-8 py-20 text-text max-w-7xl mx-auto flex flex-col md:flex-row gap-20  relative overflow-hidden text-gray-900">
       <ToastContainer position="top-right" autoClose={3000} />
-      <h1 className="absolute top-12 left-8 text-center text-[8rem] font-extrabold text-primary opacity-10 select-none pointer-events-none hidden md:block">
+      <h1 className="absolute top-12 left-8 text-center text-[8rem] font-extrabold text-primary opacity-10 dark:opacity-30 select-none pointer-events-none hidden md:block">
         CONTACT
       </h1>
 
@@ -58,17 +58,17 @@ export default function ContactPage() {
         <h2 className="text-5xl font-extrabold tracking-tight text-primary">
           Get In <span className="text-primary">Touch</span>
         </h2>
-        <p className="font-semibold text-xl text-gray-700">Don't be shy!</p>
-        <p className="max-w-md text-gray-600 leading-relaxed">
+        <p className="font-semibold text-xl text-text">Don't be shy!</p>
+        <p className="max-w-md text-text leading-relaxed">
           Feel free to reach out for new projects, creative ideas, or
           opportunities to collaborate.
         </p>
 
-        <div className="flex flex-col gap-6 max-w-md text-gray-700">
+        <div className="flex flex-col gap-6 max-w-md ">
           <div className="flex items-center gap-5">
             <FaEnvelope size={30} className="text-primary" />
             <div>
-              <p className="font-semibold text-gray-900">Mail me</p>
+              <p className="font-semibold text-text">Mail me</p>
               <a
                 href="mailto:shariyershazan1@gmail.com"
                 className="hover:text-primary transition duration-300"
@@ -80,7 +80,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-5">
             <FaPhone size={30} className="text-primary" />
             <div>
-              <p className="font-semibold text-gray-900">Call me</p>
+              <p className="font-semibold text-text">Call me</p>
               <a
                 href="tel:+8801724630245"
                 className="hover:text-primary transition duration-300"

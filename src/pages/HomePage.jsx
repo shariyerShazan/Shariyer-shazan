@@ -69,7 +69,7 @@ function HomePage() {
             className="block text-lg md:text-xl text-primary font-semibold mt-2"
           />
 
-          <p className="flex flex-col gap-4 mt-4 text-left text-text text-sm md:text-base max-w-md">
+          <p className="flex flex-col gap-4 mt-4 text-left text-text  text-sm md:text-base max-w-md">
           <span >As a passionate MERN Stack developer, I enjoy building smooth, user-friendly web experiences that solve real-world problems. With a solid grip on React.js, Next.js, Node.js, Express, and MongoDB, I specialize in creating responsive interfaces and efficient backend systems.
           </span>
 <span className="">Alongside, I’m experienced with Tailwind CSS and GitHub, which helps me maintain clean code and collaborate effectively. I always aim to learn and grow while crafting digital products that people actually love to use.</span>

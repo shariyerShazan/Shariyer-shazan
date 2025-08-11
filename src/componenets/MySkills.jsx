@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 export default function MySkills() {
   return (
-    <section className="group relative max-w-full mt-12 border-t-2 border-gray-400  mx-auto px-6 py-12">
+    <section className="group relative max-w-full mt-12 border-t-1 border-gray-400  mx-auto px-6 py-12">
       <button className="my-4 justify-center   cursor-pointer  w-full relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden group-hover:text-white">
                          <span className="text-lg font-bold">Skills</span>
                         

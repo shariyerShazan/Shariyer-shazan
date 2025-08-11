@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { FiSettings } from 'react-icons/fi';
 import { themes } from '../data';
-import { setActiveTheme } from '../redux/themeSlice';
+import { setActiveTheme, setDarkTheme } from '../redux/themeSlice'; 
 
 export default function ThemeSelector() {
-  const { activeTheme } = useSelector((state) => state.theme);
+  const { activeTheme, darkTheme } = useSelector((state) => state.theme);
   const dispatch = useDispatch();
 
   const [showThemes, setShowThemes] = useState(false);
@@ -15,7 +15,6 @@ export default function ThemeSelector() {
   const panelRef = useRef(null);
   const dragging = useRef(false);
   const dragStart = useRef({ x: 0, y: 0 });
-
 
   const onMouseDown = (e) => {
     dragging.current = true;
@@ -104,6 +103,20 @@ export default function ThemeSelector() {
           className="fixed top-24 left-4 z-40 p-6 bg-container rounded-lg shadow-lg max-w-xs w-full"
         >
           <h2 className="mb-4 text-xl font-semibold">Choose a Theme</h2>
+
+          {/* Dark Mode Toggle */}
+          <div className="flex justify-between items-center mb-4">
+            <span className="font-medium">Dark Mode</span>
+            <button
+              onClick={() => dispatch(setDarkTheme(!darkTheme))}
+              className={`px-4 py-1 rounded-full text-white transition-colors duration-300 cursor-pointer ${
+                darkTheme ? 'bg-gray-800' : 'bg-gray-400'
+              }`}
+            >
+              {darkTheme ? 'On' : 'Off'}
+            </button>
+          </div>
+
           <div className="grid grid-cols-5 gap-2">
             {themes.map((theme) => (
               <button

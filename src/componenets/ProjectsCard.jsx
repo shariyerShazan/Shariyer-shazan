@@ -8,10 +8,10 @@ export default function ProjectCard({ img, name, description, liveLink, clientSi
       className={`border border-primary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col`}
       style={{ marginTop }}
     >
-      <img src={img} alt={name} className="w-full h-56 object-cover" />
+      <img src={img} alt={name} className="w-full h-56 object-cover " />
       <div className="p-4 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-primary mb-2">{name}</h3>
-        <p className="text-gray-700 flex-grow">{description}</p>
+        <p className="text-text  flex-grow">{description}</p>
         <div className="mt-4 flex justify-center items-center gap-2 space-y-2">
           <a
             href={liveLink}

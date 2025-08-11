@@ -3,6 +3,7 @@ import { themes } from '../data';
 
 const initialState = {
   activeTheme: themes[0], 
+  darkTheme: true
 };
 
 const themeSlice = createSlice({
@@ -12,8 +13,11 @@ const themeSlice = createSlice({
     setActiveTheme(state, action) {
       state.activeTheme = action.payload;
     },
+    setDarkTheme(state , action){
+      state.darkTheme = action.payload
+    }
   },
 });
 
-export const { setActiveTheme } = themeSlice.actions;
+export const { setActiveTheme , setDarkTheme} = themeSlice.actions;
 export default themeSlice.reducer;
