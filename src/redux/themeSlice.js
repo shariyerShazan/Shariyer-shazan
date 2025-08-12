@@ -3,7 +3,7 @@ import { themes } from '../data';
 
 const initialState = {
   activeTheme: themes[0], 
-  darkTheme: true
+  darkTheme: false
 };
 
 const themeSlice = createSlice({

@@ -5,6 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import MySkills from '../componenets/MySkills';
 import GitHubStats from '../componenets/GitHubStats';
 import { FiDownload } from "react-icons/fi";
+import EducationTimeline from '../componenets/EducationTimeline.JSX';
 
 function AboutPage() {
   const birthYear = 2003;
@@ -89,7 +90,7 @@ const age = currentYear - birthYear;
           {/* Phone */}
           <div>
             <p className="font-semibold text-lg">Phone</p>
-            <p>+88 01724-630245</p>
+            <p>+880 1724 630245</p>
           </div>
           
           {/* Language */}
@@ -145,6 +146,7 @@ const age = currentYear - birthYear;
       <MySkills />
 
       <GitHubStats />
+      {/* <EducationTimeline /> */}
       
     </div>
   )

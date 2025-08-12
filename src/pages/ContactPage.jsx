@@ -47,7 +47,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="min-h-screen px-8 py-20 text-text max-w-7xl mx-auto flex flex-col md:flex-row gap-20  relative overflow-hidden text-gray-900">
+    <section className="min-h-screen px-8 py-20 text-text max-w-7xl mx-auto flex flex-col md:flex-row gap-20  relative overflow-hidden ">
       <ToastContainer position="top-right" autoClose={3000} />
       <h1 className="absolute top-12 left-8 text-center text-[8rem] font-extrabold text-primary opacity-10 dark:opacity-30 select-none pointer-events-none hidden md:block">
         CONTACT
@@ -85,7 +85,7 @@ export default function ContactPage() {
                 href="tel:+8801724630245"
                 className="hover:text-primary transition duration-300"
               >
-                +8801724-630245
+                +880 1724 630245
               </a>
             </div>
           </div>
