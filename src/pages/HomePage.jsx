@@ -26,7 +26,7 @@ function HomePage() {
       <div className="relative z-10 flex flex-col md:flex-row items-center  gap-8 px-6 md:px-12 mt-[15vh] md:mt-0">
         {/* Image */}
         <img
-          className="w-[80%] md:w-[40%] h-[50vh] md:h-[90vh] object-cover rounded-xl shadow-lg"
+          className="w-[80%] md:w-[40%] h-[50vh] md:h-[90vh] object-cover rounded-2xl shadow-lg "
           src="https://scontent.fdac27-2.fna.fbcdn.net/v/t39.30808-6/502466123_1074990197848373_4703481125785257270_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hEFqsk_5EZEQ7kNvwG2GwdP&_nc_oc=Adnw73utmHTh6CVFhvvUV0qZyLo9A--UULTf-gH0OuspMi5JjKTx7ZpjN5us_onUmU0&_nc_zt=23&_nc_ht=scontent.fdac27-2.fna&_nc_gid=UCC3O5soLr-poJRLi_20OA&oh=00_AfXDwq3jqzivToxhC0uwZlZn8Bmx0LqwFC_l-soYJh-S8Q&oe=689ED497"
           alt="Profile"
         />

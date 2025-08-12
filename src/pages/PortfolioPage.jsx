@@ -21,26 +21,26 @@ function PortfolioPage() {
       clientSide: "https://github.com/shariyerShazan/NoHunger",
       serverSide: "https://github.com/shariyerShazan/NoHunger-server",
     },
-    {
-      img: "https://via.placeholder.com/300x200.png?text=Project+Three",
-      name: "Project Three",
-      description: "This project is a social media platform clone using MERN stack with real-time chat.",
-      liveLink: "https://project-three-live.netlify.app",
-      clientSide: "https://github.com/username/project-three-client",
-      serverSide: "https://github.com/username/project-three-server",
-    },
-    {
-      img: "https://via.placeholder.com/300x200.png?text=Project+Four",
-      name: "Project Four",
-      description: "A blog platform with markdown support and admin dashboard for content management.",
-      liveLink: "https://project-four-live.netlify.app",
-      clientSide: "https://github.com/username/project-four-client",
-      serverSide: "https://github.com/username/project-four-server",
-    },
+    // {
+    //   img: "https://via.placeholder.com/300x200.png?text=Project+Three",
+    //   name: "Project Three",
+    //   description: "This project is a social media platform clone using MERN stack with real-time chat.",
+    //   liveLink: "https://project-three-live.netlify.app",
+    //   clientSide: "https://github.com/username/project-three-client",
+    //   serverSide: "https://github.com/username/project-three-server",
+    // },
+    // {
+    //   img: "https://via.placeholder.com/300x200.png?text=Project+Four",
+    //   name: "Project Four",
+    //   description: "A blog platform with markdown support and admin dashboard for content management.",
+    //   liveLink: "https://project-four-live.netlify.app",
+    //   clientSide: "https://github.com/username/project-four-client",
+    //   serverSide: "https://github.com/username/project-four-server",
+    // },
   ];
 
   return (
-    <section className="max-w-7xl mx-auto p-8 relative">
+    <section className="max-w-7xl min-h-screen mx-auto p-8 relative">
       <h2 className="text-4xl font-bold  text-primary text-center">My Projects</h2>
 
       {/* For md and above: flex layout with two columns & vertical divider */}

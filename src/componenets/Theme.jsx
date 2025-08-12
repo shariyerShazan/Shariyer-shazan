@@ -9,7 +9,7 @@ export default function ThemeSelector() {
   const dispatch = useDispatch();
 
   const [showThemes, setShowThemes] = useState(false);
-  const [pos, setPos] = useState({ x: 20, y: 20 });
+  const [pos, setPos] = useState({ x: 20,y: 20 });
 
   const dragRef = useRef(null);
   const panelRef = useRef(null);
