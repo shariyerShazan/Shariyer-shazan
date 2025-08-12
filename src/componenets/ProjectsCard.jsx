@@ -19,7 +19,7 @@ export default function ProjectCard({ img, name, description, liveLink, clientSi
             rel="noopener noreferrer"
             className="cursor-pointer group relative flex items-center px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white"
           >
-            <span className="ml-8">Live</span>
+            <span className="ml-6 flex gap-1">Live <span className="hidden md:block">Link</span></span>
             <span className="absolute -left-[4px] flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
               <MdOutlinePreview size={20} />
             </span>
@@ -32,7 +32,7 @@ export default function ProjectCard({ img, name, description, liveLink, clientSi
             rel="noopener noreferrer"
             className="cursor-pointer group relative flex items-center px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white"
           >
-            <span className="ml-8">Client</span>
+            <span className="ml-6 flex gap-1">Client <span className="hidden md:block">Repo</span></span>
             <span className="absolute -left-[4px] flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
               <FaGithub size={20} />
             </span>
@@ -45,7 +45,7 @@ export default function ProjectCard({ img, name, description, liveLink, clientSi
             rel="noopener noreferrer"
             className="cursor-pointer group relative flex items-center px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white"
           >
-            <span className="ml-8">Server</span>
+            <span className="ml-6 flex gap-1">Server <span className="hidden md:block">Repo</span></span>
             <span className="absolute -left-[4px] flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
               <FaGithub size={20} />
             </span>
