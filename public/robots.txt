@@ -1,0 +1,8 @@
+
+User-agent: *
+
+Allow: /
+
+# Disallow: /private-folder/
+
+Sitemap: https://shariyer-shazan.netlify.app/sitemap.xml
