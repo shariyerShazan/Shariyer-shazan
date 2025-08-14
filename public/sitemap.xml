@@ -6,21 +6,23 @@
   <url>
     <loc>https://shariyer-shazan.netlify.app/</loc>
     <image:image>
-      <image:loc>https://shariyer-shazan.netlify.app/src/assets/shariyer-shazan-dp.jpg</image:loc>
-      <image:title>Shariyer Shazan Profile DP</image:title>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shariyer-shazan-dp.jpg</image:loc>
+      <image:caption>Shariyer Shazan Profile DP</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://shariyer-shazan.netlify.app/src/assets/shariyer-shazan.jpg</image:loc>
-      <image:title>Shariyer Shazan Profile Photo</image:title>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shariyer-shazan.jpg</image:loc>
+      <image:caption>Shariyer Shazan Profile Photo</image:caption>
     </image:image>
   </url>
 
+  <!-- About Page -->
   <url>
     <loc>https://shariyer-shazan.netlify.app/about</loc>
     <image:image>
-      <image:loc>https://shariyer-shazan.netlify.app/src/assets/shariyer.jpg</image:loc>
-      <image:title>Shariyer Shazan About Photo</image:title>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shariyer.jpg</image:loc>
+      <image:caption>Shariyer Shazan About Photo</image:caption>
     </image:image>
   </url>
 
 </urlset>
+
