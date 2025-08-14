@@ -2,6 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router";
+import shariyerShazan from "../assets/shariyer-shazan.jpg"
 
 function HomePage() {
   return (
@@ -27,17 +28,18 @@ function HomePage() {
         {/* Image */}
         <img
           className="w-[80%] md:w-[40%] h-[50vh] md:h-[90vh] object-cover rounded-2xl shadow-lg "
-          src="https://scontent.fdac27-2.fna.fbcdn.net/v/t39.30808-6/502466123_1074990197848373_4703481125785257270_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hEFqsk_5EZEQ7kNvwG2GwdP&_nc_oc=Adnw73utmHTh6CVFhvvUV0qZyLo9A--UULTf-gH0OuspMi5JjKTx7ZpjN5us_onUmU0&_nc_zt=23&_nc_ht=scontent.fdac27-2.fna&_nc_gid=UCC3O5soLr-poJRLi_20OA&oh=00_AfXDwq3jqzivToxhC0uwZlZn8Bmx0LqwFC_l-soYJh-S8Q&oe=689ED497"
-          alt="Profile"
+          src={shariyerShazan}
+          alt="Shariyer Shazan"
+           title="Shariyer Shazan Profile Photo"
         />
 
         {/* Text */}
         <div className="text-center md:text-left flex-1 ">
           <div className="flex justify-center items-center">
           <div>
-          <h2 className="text-3xl  md:text-5xl font-bold text-primary ">
+          <h1 className="text-3xl  md:text-5xl font-bold text-primary ">
             - I'm <span className="">Shariyer Shazan .</span>
-          </h2>
+          </h1>
 
           <TypeAnimation
             sequence={[

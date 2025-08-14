@@ -4,6 +4,7 @@ import { toast, ToastContainer } from "react-toastify";
 import {
   FaEnvelope,
   FaPhone,
+  FaStar,
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 
@@ -58,7 +59,7 @@ export default function ContactPage() {
         <h2 className="text-5xl font-extrabold tracking-tight text-primary">
           Get In <span className="text-primary">Touch</span>
         </h2>
-        <p className="font-semibold text-xl text-text">Don't be shy!</p>
+        <h1 className="font-semibold text-xl  flex items-center gap-2 text-primary"><FaStar /> <span className="text-text">Shariyer Shazan </span><FaStar /></h1>
         <p className="max-w-md text-text leading-relaxed">
           Feel free to reach out for new projects, creative ideas, or
           opportunities to collaborate.

@@ -6,6 +6,7 @@ import MySkills from '../componenets/MySkills';
 import GitHubStats from '../componenets/GitHubStats';
 import { FiDownload } from "react-icons/fi";
 import EducationTimeline from '../componenets/EducationTimeline.JSX';
+import shariyer from "./../assets/shariyer.jpg"
 
 function AboutPage() {
   const birthYear = 2003;
@@ -55,6 +56,7 @@ const age = currentYear - birthYear;
             >
               <FaFacebookF size={50}/>
             </a>
+            <img className='w-12 h-12 object-cover object-top rounded-lg' src={shariyer} alt="shariyer shazan profile"      title="Shariyer Shazan Profile Photo" />
           </div>
 
       {/* Main grid */}

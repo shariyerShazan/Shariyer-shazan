@@ -41,7 +41,7 @@ function PortfolioPage() {
 
   return (
     <section className="max-w-7xl min-h-screen mx-auto p-8 relative">
-      <h2 className="text-4xl font-bold  text-primary text-center">My Projects</h2>
+      <h2 className="text-4xl font-bold  text-primary text-center">Shariyer Shazan's <span className='text-text'>Projects</span></h2>
 
       {/* For md and above: flex layout with two columns & vertical divider */}
       <div className="hidden md:flex relative mt-42 gap-8">
