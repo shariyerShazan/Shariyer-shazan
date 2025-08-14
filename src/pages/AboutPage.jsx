@@ -6,7 +6,7 @@ import MySkills from '../componenets/MySkills';
 import GitHubStats from '../componenets/GitHubStats';
 import { FiDownload } from "react-icons/fi";
 import EducationTimeline from '../componenets/EducationTimeline.JSX';
-import shariyer from "./../assets/shariyer.jpg"
+import shariyer from "./../../public/assets/shariyer.jpg"
 
 function AboutPage() {
   const birthYear = 2003;

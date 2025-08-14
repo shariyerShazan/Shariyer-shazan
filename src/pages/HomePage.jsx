@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router";
-import shariyerShazan from "../assets/shariyer-shazan.jpg"
+import shariyerShazan from "../../public/assets/shariyer-shazan.jpg"
 
 function HomePage() {
   return (
