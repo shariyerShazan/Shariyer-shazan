@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home Page -->
+  <!-- Home / Portfolio Page -->
   <url>
     <loc>https://shariyer-shazan.netlify.app/</loc>
     <image:image>
@@ -24,5 +24,9 @@
     </image:image>
   </url>
 
-</urlset>
+  <!-- Contact Page -->
+  <url>
+    <loc>https://shariyer-shazan.netlify.app/contact</loc>
+  </url>
 
+</urlset>
