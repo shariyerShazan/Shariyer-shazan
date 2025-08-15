@@ -30,7 +30,7 @@ function HomePage() {
           className="w-[80%] md:w-[40%] h-[50vh] md:h-[90vh] object-cover rounded-2xl shadow-lg "
           src={shariyerShazan}
           alt="Shariyer Shazan"
-           title="Shariyer Shazan Profile Photo"
+           title="Shariyer Shazan"
         />
 
         {/* Text */}

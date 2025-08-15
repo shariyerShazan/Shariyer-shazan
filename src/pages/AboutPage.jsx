@@ -56,7 +56,7 @@ const age = currentYear - birthYear;
             >
               <FaFacebookF size={50}/>
             </a>
-            <img className='w-12 h-12 object-cover object-top rounded-lg' src={shariyer} alt="shariyer shazan profile"      title="Shariyer Shazan Profile Photo" />
+            <img className='w-12 h-12 object-cover object-top rounded-lg' src={shariyer} alt="shariyer shazan profile"      title="Shariyer Shazan" />
           </div>
 
       {/* Main grid */}
