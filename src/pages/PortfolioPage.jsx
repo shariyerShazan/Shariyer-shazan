@@ -100,6 +100,8 @@ function PortfolioPage() {
           />
         ))}
       </div>
+      <div>
+      </div>
     </section>
   );
 
