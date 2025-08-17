@@ -30,10 +30,10 @@
     <loc>https://shariyer-shazan.netlify.app/contact</loc>
   </url>
 
-  <!-- Blog Main Page -->
+  <!-- gallery Main Page -->
 
   <url>
-    <loc>https://shariyer-shazan.netlify.app/blog</loc>
+    <loc>https://shariyer-shazan.netlify.app/gallery</loc>
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-one.jpg</image:loc>
       <image:caption>Shariyer Shazan picture</image:caption>

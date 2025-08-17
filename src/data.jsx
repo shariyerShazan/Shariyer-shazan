@@ -27,6 +27,7 @@ import Theme8 from './assets/orange.png';
 import Theme9 from './assets/green.png';
 import Theme10 from './assets/yellow.png';
 import { FaBlog } from 'react-icons/fa6';
+import { GrGallery } from 'react-icons/gr';
 
 export const links = [
   {
@@ -53,7 +54,7 @@ export const links = [
   {
     id: 4,
     name: 'Gallery',
-    icon: <FaBlog className='nav__icon' />,
+    icon: <GrGallery className='nav__icon' />,
     path: '/gallery',
   },
   {

@@ -84,12 +84,20 @@ const GallerySection = () => {
         </h1>
 
         <p className="text-gray-700 leading-relaxed text-lg">
-          Hi, I’m <span className="font-medium text-indigo-600">Shariyer Shazan</span>.  
-          This is my portfolio blog section. I love building{" "}
-          <span className="font-medium text-purple-600">web applications</span>,  
-          sharing my journey, and writing about{" "}
-          <span className="font-medium text-pink-600">new technologies</span> I learn every day.
-        </p>
+  Hi, I’m <span className="font-medium text-indigo-600">Shariyer Shazan</span>.  
+  Welcome to my personal <span className="font-medium text-purple-600">gallery</span> where I share some snapshots of my life.  
+  Beyond my professional interests, I truly enjoy exploring new experiences and following my passions.  
+
+  My hobbies include:   
+  <span className="font-medium text-pink-600"> Photography</span>,  
+  <span className="font-medium text-indigo-600"> watching cinema</span>,  
+  <span className="font-medium text-purple-600"> touring & bike rides</span>,  
+  <span className="font-medium text-green-600"> framing special moments</span>,  
+  and of course <span className="font-medium text-blue-600"> coding</span>.  
+
+  This page is a small reflection of my journey and the things I love doing.
+</p>
+
 
         <motion.button
         onClick={()=>navigate("/contact")}
