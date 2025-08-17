@@ -62,7 +62,7 @@ const altDescriptions = [
 const GallerySection = () => {
     const navigate = useNavigate()
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 md:px-16 py-12 bg-gradient-to-r from-white via-gray-50 to-white">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 md:px-16 py-12  ">
       {/* Left side: Images */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {images.map((img, index) => (
@@ -103,20 +103,21 @@ const GallerySection = () => {
           <FaStar className="text-yellow-500" />
         </h1>
 
-        <p className="text-gray-700 leading-relaxed text-lg">
-  Hi, I’m <span className="font-medium text-indigo-600">Shariyer Shazan</span>.  
-  Welcome to my personal <span className="font-medium text-purple-600">gallery</span> where I share some snapshots of my life.  
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+  Hi, I’m <span className="font-medium text-indigo-600 dark:text-indigo-400">Shariyer Shazan</span>.  
+  Welcome to my personal <span className="font-medium text-purple-600 dark:text-purple-400">gallery</span> where I share some snapshots of my life.  
   Beyond my professional interests, I truly enjoy exploring new experiences and following my passions.  
 
   My hobbies include:   
-  <span className="font-medium text-pink-600"> Photography</span>,  
-  <span className="font-medium text-indigo-600"> watching cinema</span>,  
-  <span className="font-medium text-purple-600"> touring & bike rides</span>,  
-  <span className="font-medium text-green-600"> framing special moments</span>,  
-  and of course <span className="font-medium text-blue-600"> coding</span>.  
+  <span className="font-medium text-pink-600 dark:text-pink-400"> Photography</span>,  
+  <span className="font-medium text-indigo-600 dark:text-indigo-400"> watching cinema</span>,  
+  <span className="font-medium text-purple-600 dark:text-purple-400"> touring & bike rides</span>,  
+  <span className="font-medium text-green-600 dark:text-green-400"> framing special moments</span>,  
+  and of course <span className="font-medium text-blue-600 dark:text-blue-400"> coding</span>.  
 
   This page is a small reflection of my journey and the things I love doing.
 </p>
+
 
 
         <motion.button
