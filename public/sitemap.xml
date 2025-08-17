@@ -32,72 +32,89 @@
 
   <!-- gallery Main Page -->
 
-  <url>
+   <url>
     <loc>https://shariyer-shazan.netlify.app/gallery</loc>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-one.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan exploring nature</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-two.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan practicing photography</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-three.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan at university campus</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-four.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan framing a special moment</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-five.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan enjoying at a restaurant</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-six.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan traveling to a scenic location</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-seven.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan at college</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-eight.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan relaxing in a park</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-nine.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan portrait photography hobby</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-ten.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan enjoying sunrise view from hilltop</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-eleven.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan taking photos of nature</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-twelve.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan nature photography near river</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-thirteen.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan creative framing of a photo</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-fourteen.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan enjoying at a fair</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-fiveteen.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan coding in a natural place</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-sixteen.jpg</image:loc>
-      <image:caption>Shariyer Shazan picture</image:caption>
+      <image:caption>Shariyer Shazan on a bike touring adventure</image:caption>
     </image:image>
+
   </url>
 
 </urlset>

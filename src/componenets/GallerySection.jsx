@@ -39,6 +39,26 @@ const images = [
   shariyerSixteen,
 ];
 
+const altDescriptions = [
+  "Shariyer Shazan exploring nature",
+  "Shariyer Shazan practicing photography",
+  "Shariyer Shazan at university campus",
+  "Shariyer Shazan framing a special moment",
+  "Shariyer Shazan enjoying at a restaurant",
+  "Shariyer Shazan traveling to a scenic location",
+  "Shariyer Shazan at college",
+  "Shariyer Shazan relaxing in a park",
+  "Shariyer Shazan portrait photography hobby",
+  "Shariyer Shazan enjoying sunrise view from hilltop",
+  "Shariyer Shazan taking photos of nature",
+  "Shariyer Shazan nature photography near river",
+  "Shariyer Shazan creative framing of a photo",
+  "Shariyer Shazan enjoying at a fair",
+  "Shariyer Shazan coding in a natural place",
+  "Shariyer Shazan on a bike touring adventure"
+];
+
+
 const GallerySection = () => {
     const navigate = useNavigate()
   return (
@@ -58,7 +78,7 @@ const GallerySection = () => {
           <div >
           <img
               src={img}
-              alt={`shariyer shazan ${index + 1}`}
+              alt={altDescriptions[index]}       
               title="Shariyer Shazan"
               className="w-full h-48 cursor-pointer object-cover object-center transition-all duration-1000 ease-in-out hover:scale-110 hover:opacity-90"
             />
