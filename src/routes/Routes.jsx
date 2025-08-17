@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import PortfolioPage from "../pages/PortfolioPage";
+import GalleryPage from "../pages/GalleryPage";
 
 const Router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const Router = createBrowserRouter([
             {
                 path: "portfolio" ,
                 element: <PortfolioPage />
+            },
+            {
+                path: "gallery" ,
+                element: <GalleryPage />
             }
         ]
     }

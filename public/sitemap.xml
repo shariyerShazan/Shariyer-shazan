@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home / Portfolio Page -->
+  <!-- Home page -->
   <url>
     <loc>https://shariyer-shazan.netlify.app/</loc>
     <image:image>
@@ -18,15 +18,86 @@
   <!-- About Page -->
   <url>
     <loc>https://shariyer-shazan.netlify.app/about</loc>
-    <image:image>
-      <image:loc>https://shariyer-shazan.netlify.app/assets/shariyer.jpg</image:loc>
-      <image:caption>Shariyer Shazan About Photo</image:caption>
-    </image:image>
+  </url>
+
+  <!-- Portfolio page -->
+  <url>
+    <loc>https://shariyer-shazan.netlify.app/portfolio</loc>
   </url>
 
   <!-- Contact Page -->
   <url>
     <loc>https://shariyer-shazan.netlify.app/contact</loc>
+  </url>
+
+  <!-- Blog Main Page -->
+
+  <url>
+    <loc>https://shariyer-shazan.netlify.app/blog</loc>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-one.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-two.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-three.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-four.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-five.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-six.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-seven.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-eight.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-nine.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-ten.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-eleven.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-twelve.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-thirteen.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-fourteen.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-fiveteen.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shariyer-shazan.netlify.app/assets/shazan-sixteen.jpg</image:loc>
+      <image:caption>Shariyer Shazan picture</image:caption>
+    </image:image>
   </url>
 
 </urlset>

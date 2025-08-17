@@ -5,6 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import MySkills from '../componenets/MySkills';
 import GitHubStats from '../componenets/GitHubStats';
 import { FiDownload } from "react-icons/fi";
+import BlogSection from '../componenets/GallerySection';
 
 
 
@@ -148,8 +149,8 @@ const age = currentYear - birthYear;
       <MySkills />
 
       <GitHubStats />
-      {/* <EducationTimeline /> */}
-      
+
+
     </div>
   )
 }

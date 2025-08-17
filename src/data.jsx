@@ -26,6 +26,7 @@ import Theme7 from './assets/yellowgreen.png';
 import Theme8 from './assets/orange.png';
 import Theme9 from './assets/green.png';
 import Theme10 from './assets/yellow.png';
+import { FaBlog } from 'react-icons/fa6';
 
 export const links = [
   {
@@ -48,8 +49,15 @@ export const links = [
     path: '/portfolio',
   },
 
+ 
   {
     id: 4,
+    name: 'Gallery',
+    icon: <FaBlog className='nav__icon' />,
+    path: '/gallery',
+  },
+  {
+    id: 5,
     name: 'Contact',
     icon: <FaEnvelopeOpen className='nav__icon' />,
     path: '/contact',
