@@ -102,8 +102,8 @@ const age = currentYear - birthYear;
             <p>Bangla, English</p>
           </div>
           <div>
-                  <button className="my-4  cursor-pointer group relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white">
-                   <span className="ml-8"> Download CV</span>
+                  <a target="_blank" href='https://drive.google.com/file/d/1baBBmPw5aJcFL7GtQ4AJqS03aOLmV_I1/view' className="my-4 w-max cursor-pointer group relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white">
+                   <span className="ml-8">Shazan's Resume</span>
                     <span className=" absolute -left-[4px]  flex items-center justify-center w-11 h-full rounded-full bg-primary  text-white z-10">
                       <FiDownload size={20}/>
                     </span>
@@ -112,7 +112,7 @@ const age = currentYear - birthYear;
                     <span
                       className="absolute top-0 left-0 w-0 h-full  bg-primary transition-all duration-500 ease-in-out group-hover:w-full -z-10 rounded-full"
                     ></span>
-                  </button>
+                  </a>
           </div>
         </div>
 
