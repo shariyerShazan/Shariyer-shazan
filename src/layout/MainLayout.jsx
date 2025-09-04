@@ -29,7 +29,7 @@ function MainLayout() {
   }
 
   return (
-    <div className='dark:bg-gray-950 text-text'>
+    <div className='dark:bg-gray-950 text-text '>
       <Navbar />
       <ThemeSelector />
       <Outlet />

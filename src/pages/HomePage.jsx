@@ -1,10 +1,11 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router";
+import {  NavLink,  } from "react-router";
 import shariyerShazan from "../../public/assets/shariyer-shazan.jpg"
 
 function HomePage() {
+
   return (
     <div className="relative w-full min-h-screen flex flex-col md:flex-row items-center">
       {/* Background for Desktop (Left Side) */}
@@ -85,8 +86,9 @@ function HomePage() {
           </div>
           </div>
 
-          <Link to={"/about"} className="flex  justify-center items-center">
-          <button className="my-6  cursor-pointer group relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white">
+    
+         <NavLink to={"/about"} className="flex justify-center items-center"> 
+         <button  className="my-6  cursor-pointer group relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden hover:text-white">
  <span className="ml-8"> More About Me</span>
   <span className=" absolute -left-[4px]  flex items-center justify-center w-11 h-full rounded-full bg-primary text-white z-10">
     <FaArrowRight size={20}/>
@@ -97,7 +99,8 @@ function HomePage() {
     className="absolute top-0 left-0 w-0 h-full bg-primary transition-all duration-500 ease-in-out group-hover:w-full -z-10 rounded-full"
   ></span>
 </button>
-</Link>
+         </NavLink>
+
         </div>
       </div>
     </div>
