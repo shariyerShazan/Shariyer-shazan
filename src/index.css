@@ -14,3 +14,16 @@
   --color-primary: #7AC72E;
 }
 
+
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-primary);
+}
+
+.text-fill {
+  color: var(--color-primary);
+  -webkit-text-stroke: 2px var(--color-primary);
+  text-shadow: 0 0 15px var(--color-primary), 0 0 25px var(--color-primary);
+  transition: all 0.5s ease-in-out;
+}
