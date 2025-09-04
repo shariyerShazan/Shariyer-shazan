@@ -89,8 +89,9 @@ export default function MySkills() {
             onMouseLeave={() => setHoveredIndex(null)}
             style={{
               boxShadow: hoveredIndex === index ? `-5px 5px 0 0 ${color}` : "none",
+              transition: "box-shadow 0.3s ease-in-out", 
             }}
-            className="flex flex-col items-center border-primary border-2 justify-center p-4 bg-white dark:bg-gray-800 rounded-xl transform transition duration-500 hover:-translate-y-2 hover:scale-105"
+            className="flex flex-col items-center border-primary border-2 justify-center p-4 bg-white dark:bg-gray-800 rounded-xl transform transition duration-500 hover:-translate-y-2 hover:scale-105 "
           >
             <img
               src={skill.icon}

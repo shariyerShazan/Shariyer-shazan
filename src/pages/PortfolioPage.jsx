@@ -1,15 +1,15 @@
 // PortfolioPage.jsx
 import React from "react";
 import ProjectCard from "../componenets/ProjectsCard";
-import flatflow from "../assets/flatflow.png";
-import noHunger from "../assets/noHunger.png";
+// import flatflow from "../assets/flatflow.png";
+// import noHunger from "../assets/noHunger.png";
 // import mealMart from "../assets/mealMart.png";
 // import jobDrop from "../assets/jobDrop.png";
 
 function PortfolioPage() {
   const projects = [
     {
-      img: flatflow,
+      img: "https://i.ibb.co.com/nqRvCn6Y/Screenshot-2025-09-04-at-9-06-23-PM.png",
       name: "FlatFlow - Building Management App (Full Stack Website | Admin | Member | User)",
       description: [
         "FlatFlow is an online apartment/flat management web application with full responsiveness.",
@@ -23,7 +23,7 @@ function PortfolioPage() {
       serverSide: "https://github.com/shariyerShazan/FlatFlow-server",
     },
     {
-      img: 'mealMart',
+      img: 'https://i.ibb.co.com/ksFFF8TW/Screenshot-2025-09-04-at-9-19-40-PM.png',
       name: "MealMart - Restaurant App (Full Stack Website | Admin | User)",
       description: [
         "Full-stack web application with role-based access for Users & Admins.",
@@ -32,11 +32,11 @@ function PortfolioPage() {
       ],
       technology: "React.js | TypeScript | Redux Toolkit | Tailwind | ShadCN UI | Node.js | Express.js | MongoDB | Mongoose | Stripe Checkout | Mailtrap | Cloudinary | Multer | Axios",
       liveLink: "#",
-      clientSide: "#",
-      serverSide: "#",
+      clientSide: "https://github.com/shariyerShazan/MealMart-restaurant-client",
+      serverSide: "https://github.com/shariyerShazan/MealMart-restaurant-server",
     },
     {
-      img: noHunger,
+      img: "https://i.ibb.co.com/9HkNf12t/Screenshot-2025-09-04-at-9-04-47-PM.png",
       name: "NoHunger - Food Donation Platform (Full Stack Website | Donor | User)",
       description: [
         "NoHunger is an online food donation web application designed to reduce food waste.",
@@ -49,7 +49,7 @@ function PortfolioPage() {
       serverSide: "https://github.com/shariyerShazan/NoHunger-server",
     },
     {
-      img: 'jobDrop',
+      img: 'https://i.ibb.co.com/Pzg29FsG/Screenshot-2025-09-04-at-9-09-35-PM.png',
       name: "JobDrop - Job Portal Web Application (Full Stack Website | Job Seeker | Recruiter)",
       description: [
         "Full-stack job portal with role-based access for Job Seekers and Recruiters.",
@@ -57,9 +57,9 @@ function PortfolioPage() {
         "Recruiters: Create, edit, delete job postings, review applications, and accept/reject candidates.",
       ],
       technology: "React.js | Node.js | Express.js | MongoDB | Mongoose | JWT | Axios | Tailwind | React-Context | React-Router | Cookie-Parser | AOS | Motion",
-      liveLink: "#",
-      clientSide: "#",
-      serverSide: "#",
+      liveLink: "https://jobdrop-shazan.netlify.app/",
+      clientSide: "https://github.com/shariyerShazan/JobDrop-client",
+      serverSide: "https://github.com/shariyerShazan/JobDrop-server",
     },
   ];
 
@@ -78,7 +78,7 @@ function PortfolioPage() {
             <ProjectCard
               key={idx}
               {...proj}
-              marginTop={idx === 0 ? "120px" : ""} // staggered effect
+              marginTop={idx === 0 ? "150px" : ""} // staggered effect
             />
           ))}
         </div>
