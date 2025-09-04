@@ -101,3 +101,25 @@
   50% { transform: translateX(50%) translateY(-20px) rotate(5deg); }
   100% { transform: translateX(0) translateY(0) rotate(0deg); }
 }
+
+
+
+
+
+
+.door-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #101828; 
+  transform: scaleX(1);
+  transform-origin: left; 
+  transition: transform 1.5s ease-in-out;
+  z-index: 9999;
+}
+
+.door-open {
+  transform: scaleX(0); 
+}

@@ -3,7 +3,7 @@ import GallerySection from '../componenets/GallerySection'
 
 const GalleryPage = () => {
   return (
-    <div className='dark:bg-black min-h-screen'>
+    <div className='dark:bg-gray-950 min-h-screen'>
         <GallerySection />
     </div>
   )
