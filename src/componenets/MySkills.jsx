@@ -41,20 +41,22 @@ const skills = {
 };
 
 export default function MySkills() {
-  const [isHovered, setIsHovered] = useState(false);
   const [color, setColor] = useState(""); 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [activeCategory, setActiveCategory] = useState("frontend"); 
+
   useEffect(() => {
     const primaryColor = getComputedStyle(document.documentElement)
       .getPropertyValue('--color-primary')
       .trim(); 
-
-    setColor(primaryColor); // state update
+    setColor(primaryColor);
   }, []);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const categories = Object.keys(skills);
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
@@ -62,37 +64,43 @@ export default function MySkills() {
         My Skills
       </h2>
 
-      {Object.entries(skills).map(([category, items]) => (
-        <div 
-          
-        key={category} className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 text-center text-secondary capitalize">
-            {category.replace("&", " & ")}
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {items.map((skill , index) => (
-              <div
-                 data-aos="fade-up"
-                data-aos-duration={`${index*300}`}
-                key={skill.index}
-                onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{
-        boxShadow: isHovered ? `-5px 5px 0 0 ${color}` : "none", 
-      }}
-                className={`flex flex-col items-center border-primary border  justify-center p-4 bg-white dark:bg-gray-800 rounded-xl  transform transition duration-500 hover:-translate-y-2 hover:scale-105  `}
-              >
-                <img
-                  src={skill.icon}
-                  alt={skill.name}
-                  className="w-16 h-16 object-contain mb-2"
-                />
-                <span className="text-sm font-medium text-center">{skill.name}</span>
-              </div>
-            ))}
+      {/* Category buttons */}
+      <div className="flex justify-center gap-4 mb-12 flex-wrap">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setActiveCategory(cat)}
+            className={`cursor-pointer px-6 py-2 rounded-full font-semibold transition-all duration-300
+              ${activeCategory === cat ? "bg-primary text-white" : "border border-primary text-primary hover:bg-primary hover:text-white"}`}
+          >
+            {cat.charAt(0).toUpperCase() + cat.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      {/* Skills grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        {skills[activeCategory].map((skill, index) => (
+          <div
+            key={skill.name}
+            data-aos="fade-up"
+            data-aos-duration={`${index*300}`}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            style={{
+              boxShadow: hoveredIndex === index ? `-5px 5px 0 0 ${color}` : "none",
+            }}
+            className="flex flex-col items-center border-primary border-2 justify-center p-4 bg-white dark:bg-gray-800 rounded-xl transform transition duration-500 hover:-translate-y-2 hover:scale-105"
+          >
+            <img
+              src={skill.icon}
+              alt={skill.name}
+              className="w-16 h-16 object-contain mb-2"
+            />
+            <span className="text-sm font-medium text-center">{skill.name}</span>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }
