@@ -79,7 +79,7 @@ export default function MySkills() {
       </div>
 
       {/* Skills grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className="grid cursor-pointer grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
         {skills[activeCategory].map((skill, index) => (
           <div
             key={skill.name}
