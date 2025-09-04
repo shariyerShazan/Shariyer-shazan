@@ -15,15 +15,45 @@
 }
 
 
-
 .text-outline {
   color: transparent;
   -webkit-text-stroke: 2px var(--color-primary);
 }
 
 .text-fill {
-  color: var(--color-primary);
-  -webkit-text-stroke: 2px var(--color-primary);
-  text-shadow: 0 0 15px var(--color-primary), 0 0 25px var(--color-primary);
+  color: #44ff00; 
+  -webkit-text-stroke: 2px #ffffff; 
+  
+  text-shadow:
+    0 0 5px #0d00ff,
+    0 0 10px #0d00ff,
+    0 0 20px #0d00ff,
+    0 0 40px #0d00ff,
+    0 0 80px #0d00ff; /* strong glowing effect */
+  
   transition: all 0.5s ease-in-out;
 }
+
+
+
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  transition: transform 0.75s ease-out, width 0.5s ease, height 0.5s ease;
+  z-index: 9999;
+}
+.custom-cursor.active {
+  width: 70px;
+  height: 70px;
+}
+
+
+

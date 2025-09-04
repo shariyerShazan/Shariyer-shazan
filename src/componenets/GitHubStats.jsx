@@ -3,14 +3,9 @@ import React from 'react';
 export default function GitHubStats() {
   return (
     <section className="group w-full mx-auto px-6 py-12">
-      <button className="my-4 justify-center   cursor-pointer  w-full relative flex items-center  px-5 py-2 border-2 border-primary rounded-full text-primary overflow-hidden group-hover:text-white">
-                         <span className="text-lg font-bold">GitHub Stats</span>
-                        
-                          {/* Background fill effect */}
-                          <span
-                            className="absolute top-0 left-0 w-0 h-full bg-primary transition-all duration-1000 ease-in-out group-hover:w-full -z-10 rounded-full"
-                          ></span>
-                        </button>
+       <h2 className="text-4xl font-bold text-center text-primary mb-12 relative after:block after:w-24 after:h-1 after:bg-primary after:rounded mt-4 after:mx-auto">
+         GitHub Status
+      </h2>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
         <img
